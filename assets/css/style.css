@@ -1,0 +1,197 @@
+:root {
+  --text-color: #000;
+  --text-inverse: #f7f5f5;
+  --primary-color: rgb(40, 40, 40);
+  /* --primary-color: #353942; */
+  --secondary-color: rgb(60, 60, 60);
+  --accent-color: rgb(255, 45, 45);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-inverse);
+}
+
+input,
+option,
+select {
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  border: 0;
+  background-color: var(--primary-color);
+  border-bottom: 2px solid var(--accent-color);
+  border-radius: 0.5rem;
+  color: var(--text-inverse);
+}
+
+input:focus,
+option:focus,
+select:focus {
+  outline: none;
+}
+
+input[type="number"] {
+  width: 5ch;
+}
+
+.btn {
+  font-size: 1.3rem;
+  padding: 0.7em;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.primary-btn {
+  background-color: var(--accent-color);
+  color: var(--text-inverse);
+}
+
+.btn:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.side-margin {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.logo {
+  color: var(--accent-color);
+}
+
+/* banner */
+.banner {
+  padding-top: 5em;
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 500px;
+  /* background: url("/assets/images/banner-back.jpg"); */
+  background-size: cover;
+  background-position: 0 -600px;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  color: var(--text-inverse);
+}
+.banner a {
+  color: var(--text-inverse);
+}
+
+.banner-cards {
+  background-color: var(--secondary-color);
+  display: flex;
+  width: 400px;
+  /* justify-content: space-around; */
+  padding: 0.5em;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.banner-cards-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: transform 0.25s ease;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.banner-cards-item:hover {
+  transform: translateY(-0.5rem);
+}
+
+.selected {
+  background-color: var(--accent-color);
+}
+.banner-cards i {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.banner-cards-item p {
+  opacity: 0.5;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.sticky {
+  background-color: var(--primary-color);
+  color: var(--text-inverse);
+}
+
+.sticky a {
+  color: var(--text-inverse);
+}
+
+/* ticket Seclector Planes */
+.plane-ticket-container {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  padding-bottom: 2rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  width: 400px;
+  /* box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.411); */
+}
+
+.plane-ticket-container button {
+  width: 100%;
+}
+
+.plane-form > div {
+  margin-top: 2rem;
+}
+.plane-location {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plane-to {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.swap {
+  height: min-content;
+  padding: 0.5em;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.15s ease-in;
+}
+
+.swap:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.display-plane {
+  color: var(--accent-color);
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}

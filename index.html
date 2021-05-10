@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+</head>
+<body>
+    <header class="side-margin">
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
+        <nav>
+            <div class="nav-item"><a href="#">Hotels</a></div>
+            <div class="nav-item has-dropdown">
+                <a href="#">Transportation</a>
+                <div class="dropdown">
+                    <div class="dropdown-space"></div>
+                    <div class="dropdown-item"><a href="#">Link</a></div>
+                    <div class="dropdown-item"><a href="#">Link</a></div>
+                    <div class="dropdown-item"><a href="#">Link</a></div>
+                    <div class="dropdown-item"><a href="#">Link</a></div>
+                </div>
+            </div>
+            <div class="nav-item"><a href="#">Contact</a></div>
+            <div class="nav-item"><a href="#">Sign In</a></div>
+        </nav>
+        <div class="social">
+            <a href="#"><img src="assets/images/social/Facebook.png"></a>
+            <a href="#"><img src="assets/images/social/Instagram.png"></a>
+            <a href="#"><img src="assets/images/social/Twitter.png"></a>
+            <a href="#"><img src="assets/images/social/LinkedIN.png"></a>
+            <a href="#"><img src="assets/images/social/VK.png"></a>
+            <a href="#"><img src="assets/images/social/Google +.png"></a>
+            <a href="#"><img src="assets/images/social/OK.png"></a>
+        </div>
+    </header>
+    <section class="banner side-margin">
+        <div>
+            <div class="banner-cards">
+                <div class="banner-cards-item">
+                    <i class="fas fa-hotel"></i>
+                    <p>Hotel</p>
+                </div>
+                <div class="banner-cards-item">
+                    <i class="fas fa-route"></i>
+                    <p>Destination</p>
+                </div>
+                <div class="banner-cards-item selected">
+                    <i class="fas fa-plane"></i>
+                    <p>Flight</p>
+                </div>
+            </div>
+            <div class="plane-ticket-container">
+                <form  class="plane-form">
+                    <div class="plane-location">
+                        <div class="plane-from">
+                            <h3>Depart From</h3>
+                            <h2 class="display-plane" id="display-from">KTM</h2>
+                            <select name="plane-from" id="plane-from">
+                                <option value="KTM"></option>
+                            </select>
+                        </div>
+                        <div id="swap" class="swap"><i class="fas fa-sync-alt"></i></div>
+                        <div class="plane-to">
+                            <h3>Going To</h3>
+                            <h2 class="display-plane" id = "display-to">BWA</h2>
+                            <select name="plane-to" id="plane-to">
+                                <option value="BWA">Bhairahawa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="plane-date">
+                        <input type="date" name="date" id="plane-date">
+                    </div>
+                    <div class="plane-passengers">
+                        <label for="plane-adult">Adults</label>
+                        <input type="number" name="adults" id="plane-adult">
+                        <label for="plane-child">Children</label>
+                        <input type="number" name="child" id="plane-child">
+                    </div>
+                    <button type="submit" class="btn primary-btn">Search Flights</button>
+                </form>
+            </div>
+        </div>
+        <img src="assets/images/banner-side.svg">
+    </section>
+    <section class="side-margin">
+        
+    </section>
+    
+</body>
+<script src="assets/js/header.js"></script>
+<script src="assets/js/planeTicket.js"></script>
+</html>

@@ -1,0 +1,62 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+nav {
+  display: flex;
+  height: 100%;
+}
+
+.nav-item {
+  padding: 1.5rem 0.5rem;
+}
+
+.sticky .nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.151);
+}
+
+.social img {
+  width: 25px;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 350ms ease;
+}
+
+.social img:hover,
+.social a:focus img {
+  transform: translateY(-0.5em);
+}
+
+.dropdown {
+  position: absolute;
+  min-width: 15ch;
+  display: none;
+}
+
+.dropdown-item {
+  background-color: rgb(49, 49, 49);
+
+  padding: 0.5rem;
+}
+
+.dropdown a {
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  background-color: #000;
+}
+
+.dropdown-space {
+  background: none;
+  width: 100%;
+  height: 2ch;
+}
+
+.has-dropdown:hover .dropdown {
+  display: block;
+}
