@@ -87,14 +87,9 @@ plane_to.addEventListener('change',()=>{
     populateAirportTo();
 });
 swap_btn.addEventListener('click',(event)=>{
+    console.log('swapped');
     event.preventDefault();
    swap();
    populateAirportFrom();
    populateAirportTo();
 });
-
-
-
-
-populateAirportFrom();
-populateAirportTo();

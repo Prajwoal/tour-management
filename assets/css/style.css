@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 :root {
   --text-color: #000;
   --text-inverse: #f7f5f5;
@@ -11,7 +13,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 body {
@@ -145,8 +147,12 @@ input[type="number"] {
   color: var(--text-inverse);
 }
 
+.hidden {
+  display: none;
+}
+
 /* ticket Seclector Planes */
-.plane-ticket-container {
+.ticket-container {
   background-color: var(--secondary-color);
   padding: 1rem;
   padding-bottom: 2rem;
@@ -156,7 +162,7 @@ input[type="number"] {
   /* box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.411); */
 }
 
-.plane-ticket-container button {
+.ticket-container button {
   width: 100%;
 }
 
@@ -193,5 +199,23 @@ input[type="number"] {
 .display-plane {
   color: var(--accent-color);
   font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+/* Hotel booking form */
+
+.hotel-form > div {
+  margin-top: 0.5rem;
+}
+
+.hotel-numbers {
+  display: flex;
+}
+
+.hotel-guests {
+  margin-left: 2em;
+}
+
+.hotel-form h3 {
   margin: 0.5rem 0;
 }

@@ -42,58 +42,92 @@
     <section class="banner side-margin">
         <div>
             <div class="banner-cards">
-                <div class="banner-cards-item">
+                <div class="banner-cards-item" id="hotel-icon">
                     <i class="fas fa-hotel"></i>
                     <p>Hotel</p>
                 </div>
-                <div class="banner-cards-item">
+                <div class="banner-cards-item" id="destination-icon">
                     <i class="fas fa-route"></i>
                     <p>Destination</p>
                 </div>
-                <div class="banner-cards-item selected">
+                <div class="banner-cards-item selected" id="plane-icon">
                     <i class="fas fa-plane"></i>
                     <p>Flight</p>
                 </div>
             </div>
-            <div class="plane-ticket-container">
-                <form  class="plane-form">
-                    <div class="plane-location">
-                        <div class="plane-from">
-                            <h3>Depart From</h3>
-                            <h2 class="display-plane" id="display-from">KTM</h2>
-                            <select name="plane-from" id="plane-from">
-                                <option value="KTM"></option>
-                            </select>
+            <div class="ticket-container" id="ticket-container">
+                <div id="plane-ticket" class="hidden">
+                    <form class="plane-form">
+                        <div class="plane-location">
+                            <div class="plane-from">
+                                <h3>Depart From</h3>
+                                <h2 class="display-plane" id="display-from">KTM</h2>
+                                <select name="plane-from" id="plane-from">
+                                    <option value="KTM">Kathmandu</option>
+                                </select>
+                            </div>
+                            <div id="swap" class="swap"><i class="fas fa-exchange-alt"></i></div>
+                            <div class="plane-to">
+                                <h3>Going To</h3>
+                                <h2 class="display-plane" id = "display-to">BWA</h2>
+                                <select name="plane-to" id="plane-to">
+                                    <option value="BWA">Bhairahawa</option>
+                                </select>
+                            </div>
                         </div>
-                        <div id="swap" class="swap"><i class="fas fa-sync-alt"></i></div>
-                        <div class="plane-to">
-                            <h3>Going To</h3>
-                            <h2 class="display-plane" id = "display-to">BWA</h2>
-                            <select name="plane-to" id="plane-to">
-                                <option value="BWA">Bhairahawa</option>
-                            </select>
+                        <div class="plane-date">
+                            <input type="date" name="date" id="plane-date">
                         </div>
-                    </div>
-                    <div class="plane-date">
-                        <input type="date" name="date" id="plane-date">
-                    </div>
-                    <div class="plane-passengers">
-                        <label for="plane-adult">Adults</label>
-                        <input type="number" name="adults" id="plane-adult">
-                        <label for="plane-child">Children</label>
-                        <input type="number" name="child" id="plane-child">
-                    </div>
-                    <button type="submit" class="btn primary-btn">Search Flights</button>
-                </form>
+                        <div class="plane-passengers">
+                            <label for="plane-adult">Adults</label>
+                            <input type="number" name="adults" id="plane-adult">
+                            <label for="plane-child">Children</label>
+                            <input type="number" name="child" id="plane-child">
+                        </div>
+                        <button type="submit" class="btn primary-btn">Search Flights</button>
+                    </form>
+                </div>
+                <div id="hotel-booking" class="hidden">
+                    <form class="hotel-form">
+                        <div class="hotel-location">
+                            <h3>City</h3>
+                            <input type="text" list="hotel-location-list">
+                            <datalist id="hotel-location-list">
+                                <option value="Kathmandu">
+                                <option value="Pokhara">
+                                <option value="Butwal">
+                                <option value="Biratnagar">
+                                <option value="Jhapa">
+                            </datalist>
+                        </div>
+                        <div class="checkin-date">
+                            <h3>Check-in</h3>
+                            <input type="date" name='checkin'>
+                        </div>
+                        <div class="checkout-date">
+                            <h3>Check-out</h3>
+                            <input type="date" name='checkout'>
+                        </div>
+                        <div class="hotel-numbers">
+                            <div class="hotel-rooms">
+                                <h3>No of Rooms</h3>
+                                <input type="number" name = "no-of-rooms">
+                            </div>
+                            <div class="hotel-guests">
+                                <h3>No of People</h3>
+                                <input type="number" name = "no-of-people">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Search Hotels</button>
+                    </form>
+                </div>
             </div>
         </div>
         <img src="assets/images/banner-side.svg">
     </section>
-    <section class="side-margin">
-        
-    </section>
-    
+   
 </body>
 <script src="assets/js/header.js"></script>
 <script src="assets/js/planeTicket.js"></script>
+<script src="assets/js/formChange.js"></script>
 </html>
