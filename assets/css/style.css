@@ -27,7 +27,8 @@ a {
 
 input,
 option,
-select {
+select,
+textarea {
   font-size: 1.5rem;
   padding: 0.3rem;
   border: 0;
@@ -39,8 +40,13 @@ select {
 
 input:focus,
 option:focus,
-select:focus {
+select:focus,
+textarea:focus {
   outline: none;
+}
+
+textarea {
+  resize: vertical;
 }
 
 input[type="number"] {
@@ -83,10 +89,8 @@ input[type="number"] {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 500px;
-  /* background: url("/assets/images/banner-back.jpg"); */
+  min-height: 300px;
   background-size: cover;
-  background-position: 0 -600px;
   border-bottom-left-radius: 2em;
   border-bottom-right-radius: 2em;
   color: var(--text-inverse);
@@ -218,4 +222,72 @@ input[type="number"] {
 
 .hotel-form h3 {
   margin: 0.5rem 0;
+}
+
+/* Contact Page */
+.contact-strip {
+  background-color: var(--secondary-color);
+}
+
+.contact-strip h1 {
+  font-size: 2rem;
+}
+
+.contact-main {
+  display: flex;
+  justify-content: space-between;
+  min-height: 500px;
+}
+
+.contact-main div {
+  background-color: var(--secondary-color);
+  height: 100%;
+  color: var(--text-inverse);
+  margin-top: 2em;
+  border-radius: 1.3rem;
+  width: 49%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+label {
+  font-size: 1.3rem;
+  margin: 0.5rem;
+  margin-top: 1rem;
+}
+
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-inverse);
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 1.3rem;
+}
+
+.signin-form form {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-info p {
+  text-align: center;
+}
+
+.signin-info a {
+  color: var(--accent-color);
 }
