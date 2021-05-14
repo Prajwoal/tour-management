@@ -7,6 +7,9 @@
   /* --primary-color: #353942; */
   --secondary-color: rgb(60, 60, 60);
   --accent-color: rgb(255, 45, 45);
+  --danger: rgb(255, 45, 45);
+  --success: rgb(16, 223, 78);
+  --warning: rgb(253, 164, 0);
 }
 
 * {
@@ -51,6 +54,10 @@ textarea {
 
 input[type="number"] {
   width: 5ch;
+}
+
+input.error {
+  outline: 2px solid var(--accent-color);
 }
 
 .btn {
@@ -290,4 +297,51 @@ label {
 
 .signin-info a {
   color: var(--accent-color);
+}
+
+/* Alert  */
+.alert-container {
+  position: fixed;
+  bottom: 10px;
+  right: 50%;
+  transform: translateX(50%);
+  color: var(--text-inverse);
+  display: flex;
+  flex-direction: column;
+}
+
+.alert {
+  position: relative;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  width: 350px;
+  box-shadow: 4px 4px 12px #000;
+  margin: 0.3rem;
+  border-left: 5px solid var(--accent-color);
+  transition: all 5s ease-in-out;
+}
+
+.alert i {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.alert i:hover {
+  background-color: var(--accent-color);
+}
+
+.success {
+  border-left: 5px solid var(--success);
+}
+.warning {
+  border-left: 5px solid var(--warning);
+}
+.danger {
+  border-left: 5px solid var(--danger);
 }

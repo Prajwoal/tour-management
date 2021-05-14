@@ -93,3 +93,5 @@ swap_btn.addEventListener('click',(event)=>{
    populateAirportFrom();
    populateAirportTo();
 });
+populateAirportFrom();
+populateAirportTo();
