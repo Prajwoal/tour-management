@@ -1,9 +1,21 @@
+:root {
+  --text-color: #000;
+  --text-inverse: #f7f5f5;
+  --primary-color: rgb(40, 40, 40);
+  --secondary-color: rgb(60, 60, 60);
+  --secondary-opacity: rgb(255, 45, 45, 0.8);
+  --accent-color: rgb(255, 45, 45);
+  --danger: rgb(255, 45, 45);
+  --success: rgb(16, 223, 78);
+  --warning: rgb(253, 164, 0);
+}
 header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  background-color: var(--secondary-opacity);
 }
 
 nav {
